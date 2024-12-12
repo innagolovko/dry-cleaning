@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -27,7 +33,7 @@
 
 .header {
   display: flex;
-  /* width: 100%;*/
+  width: 100%;
   justify-content: center;
   /* width: 1920px; */
   /* background: #f4f7f7;*/
