@@ -28,7 +28,7 @@
 .header {
   display: flex;
   /* width: 100%;*/
-  justify-content: baseline;
+  justify-content: center;
   /* width: 1920px; */
   /* background: #f4f7f7;*/
 }
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 380px;
+  /* margin-left: 380px; */
   width: 1160px;
   height: 80px;
   /* outline: 8px rgb(12, 9, 185) solid;*/
