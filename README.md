@@ -4,9 +4,10 @@
 
 + HTML
 + CSS
-+ Flexbox
-+ Grid Layout
++ flexbox
++ grid
 + Адаптивная вёрстка
++ calc()
 + Позиционирование
 + Псевдоклассы
 

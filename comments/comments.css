@@ -1,0 +1,479 @@
+.page__comments {
+   display: flex;
+   background-color: var(--color-white);
+}
+
+.comments__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 760px);
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.comments__img {
+    width: 380px;
+    height: 1039px;
+}
+
+.comments__title {
+    font-family: 'Stengazeta';
+    width: calc(900/1160 * 100%);
+    font-weight: 400;
+    font-size: calc(64/1920 * 100vw);
+    line-height: calc(70/1920 * 100vw);
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.comments__subtitle {
+    font-family: 'Roboto';
+    width: calc(900/1160 * 100%);
+    font-weight: 700;
+    font-size: calc(20/1920 * 100vw);
+    line-height: calc(30/1920 * 100vw);
+    padding-bottom: 22px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.comments__list {
+    display: block;
+    width: calc(1120/1160 * 100%);
+    list-style: none;
+}
+
+.comments__item {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+}
+.comments__item:last-of-type {
+    margin-bottom: 72px;
+}
+
+.comments__avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0 16px 0 0;
+}
+
+.comments__item-box {
+    display: block;
+    width: calc(1040/1160 * 100%);
+    height: 25px;
+    align-items: center;
+}
+
+.comments__item-block {
+    display: flex;
+    align-items: center;
+}
+
+.comments__item-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.comments__item-name {
+    font-weight: 400;
+    font-size: calc(14/1920 * 100vw);
+    line-height: calc(16/1920 * 100vw);
+    margin: 0 10px 0 0;
+    color: var(--color-primary);
+}
+
+.comments__item-date {
+    font-weight: 400;
+    font-size: calc(14/1920 * 100vw);
+    line-height: calc(16/1920 * 100vw);
+    margin: 0 24px 0 0;
+    color: var(--color-gray);
+}
+
+.comments__item-stars {
+    display: flex;
+}
+
+.comments__item-star {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.comments__item-star:last-of-type {
+    margin-right: 0;
+}
+
+.comments__item-wrapper1 {
+    display: block;  
+    align-items: center; 
+}
+
+.comments__item-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: calc(1000/1920 * 100vw);
+    font-size: calc(15/1920 * 100vw);
+    line-height: calc(18/1920 * 100vw);
+    margin-top: 7px;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    display: -webkit-box; /* для поддержки в WebKit-браузерах */
+    -webkit-box-orient: vertical;  /* устанавливает направление коробки */
+    -webkit-line-clamp: 2; /* ограничивает количество до 2. Не работает с Firefox */
+    color: var(--color-black);
+}
+
+.comments__item-button {
+    width: 110px;
+    height: 20px;
+    font-weight: 400;
+    font-size: calc(12/1920 * 100vw);
+    line-height: calc(12/1920 * 100vw);
+    text-align: left;
+    margin: 5px 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--color-gray);
+    cursor: pointer;
+}
+
+.comments__item-arrow {
+    width: 10px;
+    height: 6px;
+}
+
+.comments__button {
+    width: calc(550/1160 * 100%);
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: calc(30/1920 * 100vw);
+    line-height: calc(30/1920 * 100vw);
+    color: var(--color-white);
+    padding: 0;
+    transition: all .5s ease-in-out;
+    animation-duration: 0.04s;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+.comments__button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+   .comments__img {
+      display: none;
+  }
+
+    .comments__content {
+      width: calc(100% - 20px);
+  }
+
+    .comments__title {
+      width: 100%;
+      font-size: calc(30/320 * 100vw);
+      line-height: calc(30/320 * 100vw);
+      text-align: center;
+  }
+
+    .comments__subtitle {
+      width: calc(290/320 * 100vw);
+      font-weight: calc(500/320 * 100vw);
+      font-size: calc(16/320 * 100vw);
+      line-height: calc(22/320 * 100vw);
+      text-align: center;
+  }
+
+    .comments__list {
+      width: calc(300/320 * 100vw);
+  }
+
+    .comments__item:last-of-type {
+      margin-bottom: 30px;
+  }
+    .comments__item:nth-child(4) {
+      display: flex; /* Открыть четвёртый элемент */
+  }
+
+    .comments__item-name {
+      font-size: calc(12/320 * 100vw);
+      line-height: calc(14/320 * 100vw);
+  }
+
+    .comments__item-date {
+      font-size: calc(14/320 * 100vw);
+      line-height: calc(16/320 * 100vw);
+      margin: 0;
+  }
+
+    .comments__item-text {
+      font-size: calc(14/320 * 100vw);
+      line-height: calc(16/320 * 100vw);
+      margin: 0;
+  }
+
+  .comments__item-button {
+      font-size: calc(12/320 * 100vw);
+      line-height: calc(12/320 * 100vw);
+  }
+
+    .comments__avatar {
+      width: 45px;
+      height: 45px;
+      margin: 0 auto;
+  }
+
+    .comments__item-box {
+      width: calc(264/320 * 100vw);
+      margin: 0 auto;
+  }
+
+    .comments__item-block {
+      display: block;
+  }
+
+    .comments__item {
+      flex-direction: column;
+      justify-content:stretch;
+      width: calc(300/320 * 100vw);
+      height: calc(230/320 * 100vw);
+      padding: calc(18/320 * 100%);;
+      margin: 0 0 30px;
+  }
+
+    .comments__item-text {
+      width: calc(264/320 * 100vw);
+      padding: 10px 0 0 0;
+     /* text-align: inherit;*/
+      hyphens: auto; /* Включает переносы слов */ 
+      -webkit-line-clamp: 4; /* ограничивает количество до 4. Не работает с Firefox */
+  }
+
+    .comments__item-wrapper {
+      display: flex;
+      width: calc(264/320 * 100vw);
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+    .comments__item-stars {
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+    .comments__item-star {
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+  }
+
+    .comments__button {
+      width: calc(100% - 20px);
+      height: 45px;
+      font-size: calc(18/320 * 100vw);
+      margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   /* .page__content {
+      width: 768px;
+  }*/
+
+    .comments__img {
+      display: none;
+  }
+
+    .comments__content {
+      width: calc(100% - 80px);
+  }
+
+    .comments__title {
+      font-size: calc(45/768 * 100vw);
+      line-height: calc(45/768 * 100vw);
+  }
+
+    .comments__subtitle {
+      width: calc(600/688 * 100%);
+      font-size: calc(16/768 * 100vw);
+      line-height: calc(20/768 * 100vw);
+  }
+
+    .comments__item {
+      margin: 0 0 40px 0;
+  }
+    .comments__item:last-of-type {
+      margin-bottom: 50px;
+  }
+
+    .comments__item-name {
+      font-size: calc(12/768 * 100vw);
+      line-height: calc(14/768 * 100vw);
+  }
+
+    .comments__item-date {
+      font-size: calc(12/768 * 100vw);
+      line-height: calc(14/768 * 100vw);
+  }
+
+    .comments__item-text {
+      width: calc(540/768 * 100vw);
+      font-size: calc(14/768 * 100vw);
+      line-height: calc(16/768 * 100vw);
+  }
+
+    .comments__item-button {
+      font-size: calc(12/768 * 100vw);
+      line-height: calc(12/768 * 100vw);
+  }
+
+    .comments__button {
+      width: calc(450/688 * 100%);
+      font-size: calc(25/768 * 100vw);
+      line-height: calc(25/768 * 100vw);
+      margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1759px) {
+  .page__content {
+      width: 1024px;
+  }
+
+    .comments__img {
+      display: none;
+  }
+  
+    .comments__content {
+      width: calc(100% - 140px);
+  }
+
+    .comments__title {
+      width: calc(600/884 * 100%); 
+      font-size: calc(55/1024 * 100vw);
+      line-height: calc(60/1024 * 100vw);
+  }
+
+    .comments__subtitle {
+      width: calc(800/884 * 100%);
+      font-size: calc(20/1024 * 100vw);
+      line-height: calc(30/1024 * 100vw);
+  }
+
+    .comments__list {
+      width: 100%;
+  }
+
+    .comments__item {
+      margin: 0 0 40px 0;
+  }
+    .comments__item:last-of-type {
+      margin-bottom: 50px;
+  }
+
+    .comments__item-name {
+      font-size: calc(14/1024 * 100vw);
+      line-height: calc(16/1024 * 100vw);
+  }
+
+    .comments__item-date {
+      font-size: calc(14/1024 * 100vw);
+      line-height: calc(16/1024 * 100vw);
+  }
+
+    .comments__item-text {
+      width: calc(780/1024 * 100vw);
+      font-size: calc(14/1024 * 100vw);
+      line-height: calc(16/1024 * 100vw);
+  }
+
+    .comments__item-button {
+      font-size: calc(12/1024 * 100vw);
+      line-height: calc(12/1024 * 100vw);
+  }
+
+    .comments__button {
+      width: calc(450/884 * 100%);
+      font-size: calc(24/1024 * 100vw);
+      line-height: calc(28/1024 * 100vw);
+  }
+}
+
+@media screen and (min-width: 1760px) and (max-width: 1919px) {
+   .page__content {
+    width: 1760px;
+  }
+
+  .comments__img {
+    width: 360px;
+    height: 984px;
+  }
+
+  .comments__content {
+    width: calc(100% - 720px);
+  }
+
+  .comments__title {
+    width: calc(900/1040 * 100%);
+    font-size: calc(60/1760 * 100vw);
+    line-height: calc(65/1760 * 100vw);
+  }
+
+  .comments__subtitle {
+    width: calc(900/1040 * 100%);
+    font-size: calc(20/1760 * 100vw);
+    line-height: calc(30/1760 * 100vw);
+  }
+
+  .comments__list {
+    width: calc(960/1000 * 100%);
+  }
+
+  .comments__item {
+    margin-bottom: 40px;
+  }
+
+  .comments__item-name {
+      font-size: calc(14/1760 * 100vw);
+      line-height: calc(16/1760 * 100vw);
+  }
+
+  .comments__item-date {
+    font-size: calc(14/1760 * 100vw);
+    line-height: calc(16/1760 * 100vw);
+  }
+
+  .comments__item-text {
+    width: calc(850/1760 * 100vw);
+    font-size: calc(15/1760 * 100vw);
+    line-height: calc(18/1760 * 100vw);
+  }
+  .comments__item:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .comments__item-button {
+    font-size: calc(12/1760 * 100vw);
+    line-height: calc(12/1760 * 100vw);
+  }
+
+  .comments__button {
+    width: calc(550/1140 * 100%);
+    font-size: calc(28/1760 * 100vw);
+    line-height: calc(30/1760 * 100vw);
+  }
+}
