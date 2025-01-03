@@ -4,15 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="noindex, nofollow" />
-        <link href="./vendor/fonts/roboto.css" rel="stylesheet" />
-        <link href="./vendor/fonts/stengazeta.css" rel="stylesheet" />
+        <link href="./vendor/fonts/Roboto Condensed.css" rel="stylesheet" />
         <link href="./index.css" rel="stylesheet" />
-        <title>Clean Moskow</title>
+        <title>Евро-Химчистка</title>
     </head>
   <body class="page">
     <div class="page__content">
 
-      <!-- Секция header 
+      <!-- Секция header -->
       
       <header class="header">
                 <div class="header__content">
@@ -70,7 +69,7 @@
                             class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
                         >
                             <a class="header__link" href="./index.html">
-                                <img src="./images/logo-white-EURO DRY ClEANING.svg" class="header__logo" alt="Логотип евро химчистки, EURO DRY CLEANING">
+                                <img src="./images/logo-white-EURO DRY ClEANING.svg" class="header__logo-white" alt="Логотип евро химчистки, EURO DRY CLEANING">
                             </a>
                             <nav class="header__navigation_burger">
                                 <ul class="hamburger-menu__container">
@@ -166,148 +165,207 @@
                         </div>
                     </div>
                 </div>
-            </header> -->
+            </header>
 
       <main class="content">
 
         <!-- Секция comments -->
 
-          <section class="comments page__comments">
-              <img src="./images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
+         <section class="comments page__comments">
+              <img src="../images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
                   <div class="comments__content">
                       <h1 class="comments__title">Отзывы наших клиентов</h1>
-                      <p class="comments__subtitle">Предлагаем ознакомиться с оценками, 
-                          которые поставили наши клиенты, и отзывами о работе Euro Dry Cleaning с Авито.
+                      <p class="comments__subtitle">Предлагаем ознакомиться с отзывами 
+                          наших клиентов о работе Euro Dry Cleaning
                       </p>
                           <ul class="comments__list">
                               <li class="comments__item">
-                                  <img src="./images/avatar.svg" class="comments__avatar" alt="аватар">
+                                  <img src="../images/avatar.svg" class="comments__avatar" alt="аватар">
                                   <div class="comments__item-box">
                                     <div class="comments__item-block">
                                         <div class="comments__item-wrapper">
                                             <p class="comments__item-name">Татьяна</p>
                                             <p class="comments__item-date">02.11.2024</p>
                                         </div>
-                                            <div class="comments__item-stars">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                            </div>
+                                            <img src="../images/stars-icon.svg" class="comments__item-stars" alt="рейтинг">
                                     </div>
-                                              <div class="comments__item-wrapper1">
-                                                <p class="comments__item-text">
-                                                    А ещё действия представителей оппозиции неоднозначны и будут 
-                                                    рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
-                                                    Равным образом, консультация с широким активом напрямую зависит 
-                                                    от приоретизации разума над эмоциями.
-                                                </p>
-                                                <button class="comments__item-button">Развернуть
-                                                    <img src="./images/arrow.svg" class="comments__item-arrow" alt="стрелка">
-                                                </button>
-                                              </div>
+                                                <div class="comments__item-texts hidden">
+                                                    <p class="comments__item-text">
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями. А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                    </p>
+                                                </div>
+                                                    <button class="comments__item-button" id="toggle">
+                                                        <span class="comments__item-button-text" id="button-text">Развернуть</span>
+                                                        <img src="../images/arrow.svg" id="arrow" class="comments__item-arrow" alt="стрелка">
+                                                    </button>
                                   </div>
                               </li>
                               <li class="comments__item">
-                                  <img src="./images/avatar.svg" class="comments__avatar" alt="аватар">
-                                    <div class="comments__item-box">
-                                        <div class="comments__item-block">
-                                            <div class="comments__item-wrapper">
-                                                <p class="comments__item-name">Татьяна</p>
-                                                <p class="comments__item-date">02.11.2024</p>
-                                            </div>
-                                              <div class="comments__item-stars">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                              </div>
+                                  <img src="../images/avatar.svg" class="comments__avatar" alt="аватар">
+                                  <div class="comments__item-box">
+                                    <div class="comments__item-block">
+                                        <div class="comments__item-wrapper">
+                                            <p class="comments__item-name">Татьяна</p>
+                                            <p class="comments__item-date">02.11.2024</p>
                                         </div>
-                                            <div class="comments__item-wrapper1">
-                                                <p class="comments__item-text">
-                                                    А ещё действия представителей оппозиции неоднозначны и будут 
-                                                    рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
-                                                    Равным образом, консультация с широким активом напрямую зависит 
-                                                    от приоретизации разума над эмоциями.
-                                                </p>
-                                                <button class="comments__item-button">Развернуть
-                                                    <img src="./images/arrow.svg" class="comments__item-arrow" alt="стрелка">
-                                                </button>
-                                            </div>
+                                            <img src="../images/stars-icon.svg" class="comments__item-stars" alt="рейтинг">
                                     </div>
+                                              <div class="comments__item-texts hidden">
+                                                    <p class="comments__item-text">
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями. А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                    </p>
+                                                </div>
+                                                    <button class="comments__item-button" id="toggle">
+                                                        <span class="comments__item-button-text" id="button-text">Развернуть</span>
+                                                        <img src="../images/arrow.svg" id="arrow" class="comments__item-arrow" alt="стрелка">
+                                                    </button>
+                                  </div>
                               </li>
                               <li class="comments__item">
-                                  <img src="./images/avatar.svg" class="comments__avatar" alt="аватар">
+                                  <img src="../images/avatar.svg" class="comments__avatar" alt="аватар">
                                   <div class="comments__item-box">
                                     <div class="comments__item-block">
                                       <div class="comments__item-wrapper">
                                         <p class="comments__item-name">Татьяна</p>
                                           <p class="comments__item-date">02.11.2024</p>
                                             </div>
-                                                  <div class="comments__item-stars">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                  </div>
+                                                  <img src="../images/stars-icon.svg" class="comments__item-stars" alt="рейтинг">
                                             </div>
-                                              <div class="comments__item-wrapper1">
-                                                <p class="comments__item-text">
-                                                    А ещё действия представителей оппозиции неоднозначны и будут 
-                                                    рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
-                                                    Равным образом, консультация с широким активом напрямую зависит 
-                                                    от приоретизации разума над эмоциями.
-                                                </p>
-                                                <button class="comments__item-button">Развернуть
-                                                    <img src="./images/arrow.svg" class="comments__item-arrow" alt="стрелка">
-                                                </button>
-                                              </div>
+                                              <div class="comments__item-texts hidden">
+                                                    <p class="comments__item-text">
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями. А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                    </p>
+                                                </div>
+                                                    <button class="comments__item-button" id="toggle">
+                                                        <span class="comments__item-button-text" id="button-text">Развернуть</span>
+                                                        <img src="../images/arrow.svg" id="arrow" class="comments__item-arrow" alt="стрелка">
+                                                    </button>
                                   </div>
-                                  
                                   
                               </li>
                               <li class="comments__item">
-                                  <img src="./images/avatar.svg" class="comments__avatar" alt="аватар">
+                                  <img src="../images/avatar.svg" class="comments__avatar" alt="аватар">
                                   <div class="comments__item-box">
                                     <div class="comments__item-block">
                                       <div class="comments__item-wrapper">
                                         <p class="comments__item-name">Татьяна</p>
                                           <p class="comments__item-date">02.11.2024</p>
                                             </div>
-                                                  <div class="comments__item-stars">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                    <img src="./images/star.svg" class="comments__item-star" alt="рейтинг">
-                                                  </div>
+                                                  <img src="../images/stars-icon.svg" class="comments__item-stars" alt="рейтинг">
                                             </div>
-                                              <div class="comments__item-wrapper1">
-                                                <p class="comments__item-text">
-                                                    Равным образом, консультация с широким активом напрямую зависит 
-                                                    от приоретизации разума над эмоциями. А ещё действия представителей 
-                                                    оппозиции неоднозначны и будут рассмотрены исключительно в разрезе 
-                                                    маркетинговых и финансовых предпосылок. 
-                                                </p>
-                                                <button class="comments__item-button">Развернуть
-                                                    <img src="./images/arrow.svg" class="comments__item-arrow" alt="стрелка">
-                                                </button>
-                                              </div>
+                                              <div class="comments__item-texts hidden">
+                                                    <p class="comments__item-text">
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                        А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями. А ещё действия представителей оппозиции неоднозначны и будут 
+                                                        рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. 
+                                                        Равным образом, консультация с широким активом напрямую зависит 
+                                                        от приоретизации разума над эмоциями.
+                                                    </p>
+                                                </div>
+                                                    <button class="comments__item-button" id="toggle">
+                                                        <span class="comments__item-button-text" id="button-text">Развернуть</span>
+                                                        <img src="../images/arrow.svg" id="arrow" class="comments__item-arrow" alt="стрелка">
+                                                    </button>
                                   </div>
-                              </li>
+                              </li> 
                           </ul>
-                          <button class="comments__button">Посмотреть ещё отзывы</button> 
-                  </div>
-             <img src="./images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
-          </section>
+                          <button class="comments__button">Посмотреть ещё отзывы</button>
+                          <div class="comments__box">
+                            <form class="comments__form">
+                              <div class="comments__form-container">
+                                  <h2 class="comments__form-title">Добавить комментарий</h2>
+                                    <p class="comments__form-subtitle">
+                                        <span class="comments__form-symbol">&#10007;</span> 
+                                        Ваш номер телефона не будет опубликован
+                                    </p>
+                                    
+                                    <label class="comments__form-label">Ваше имя</label> 
+                                        <input 
+                                            type="text" 
+                                            id="name"
+                                            name="name" 
+                                            class="comments__form-input comments__form-input_ctrl_name" 
+                                            placeholder="Напишите Ваше имя"
+                                            required
+                                        >
+                                      
+                                  
+                                    <label class="comments__form-label">Номер телефона</label>  
+                                        <input 
+                                            type="text" 
+                                            id="tel"
+                                            name="tel" 
+                                            class="comments__form-input comments__form-input_ctrl_tel" 
+                                            placeholder="+7 999 999 99-99"
+                                            required
+                                        >
+                                    
+                                    <div class="comments__form-stars">
+                                        <img src="./images/star-gray-form-comments.svg" class="comments__form-star" alt="рейтинг">
+                                        <img src="./images/star-gray-form-comments.svg" class="comments__form-star" alt="рейтинг">
+                                        <img src="./images/star-gray-form-comments.svg" class="comments__form-star" alt="рейтинг">
+                                        <img src="./images/star-gray-form-comments.svg" class="comments__form-star" alt="рейтинг">
+                                        <img src="./images/star-gray-form-comments.svg" class="comments__form-star" alt="рейтинг">
+                                    </div>
+                                    
+                                    <label class="comments__form-label">Ваш комментарий</label>  
+                                        <textarea 
+                                            id="message"
+                                            name="message" 
+                                            class="comments__form-input comments__form-input_ctrl_message" 
+                                            placeholder="Напишите Ваш комментарий"
+                                            required>
+                                        </textarea>
+                                     
+                                  <button class="comments__form-button">Опубликовать</button>
+                              </div>
+                            </form>
+                        <img src="./images/img-for-form.jpg" class="comments__form-img" alt="рисунок к форме отзывов">
+                    </div>
+                </div>
+             <img src="../images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
+        </section>
 
         <!-- Секция contacts -->
 
-         <section class="contacts page__contacts">
-             <img src="./images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
+        <section class="contacts page__contacts">
+             <img src="../images/fon-img.jpg" class="contacts__img" alt="фоновая картинка">
               <div class="contacts__content">
                   <div class="contacts__box">
                     
@@ -320,38 +378,38 @@
                               <p class="contacts__time-text">Работаем в Москве и МО</p>
                           </div>
                           <div class="contacts__manager">
-                              <p class="contacts__time-title">Mенеджер:</p>
+                              <p class="contacts__manager-title">Mенеджер:</p>
                               <p class="contacts__manager-text">8 (910) 089-90-01</p>
                           </div>
                       </div>
                       
                     </div>
-                  
-                    
                           <ul class="contacts__list">
-                              <li class="contacts__link">Написать в WhatsApp
-                                  <img src="./images/whatsapIcon.svg" class="contacts__link-icon" alt="иконка ватсап"
+                              <li class="contacts__links">
+                                <a href="#" class="contacts__link" target="_blank">Написать в WhatsApp
+                                  <img src="../images/whatsapIcon.svg" class="contacts__link-icon" alt="иконка ватсап" />
+                                </a>
                               </li>
-                              <li class="contacts__link">Написать в Telegram
-                                  <img src="./images/telegramIcon.svg" class="contacts__link-icon" alt="иконка телеграм"
+                              <li class="contacts__links">
+                                <a href="#" class="contacts__link" target="_blank">Написать в Telegram
+                                  <img src="../images/telegramIcon.svg" class="contacts__link-icon" alt="иконка телеграм" />
+                                </a>
                               </li>
-                              <li class="contacts__link">Написать в VK
-                                  <img src="./images/vkontakteIcon.svg" class="contacts__link-icon" alt="иконка вконтакте"
+                              <li class="contacts__links">
+                                <a href="#" class="contacts__link" target="_blank">Написать в VK
+                                  <img src="../images/vkontakteIcon.svg" class="contacts__link-icon" alt="иконка вконтакте" />
+                                </a>
                               </li>
                           </ul>
-
-                            <div class="contacts__slogan-box">
-                                <h2 class="contacts__slogan">EURO DRY ClEANING</h2>
-                                <h2 class="contacts__slogan1">Спасет вашу мебель</h2>
-                            </div>
-                        
+                    <img src="../images/img-cleaning.svg" class="contacts__img-cleaning" alt="рисунок">    
                     <div class="contacts__feedback">
-                        <h3 class="contacts__feedback-title">Прийдем к вам на помощь в любой ситуации!</h3>
+                      <div class="contacts__feedback-box">
+                        <h3 class="contacts__feedback-title">Придём к вам на помощь в любой ситуации!</h3>
                           <form class="contacts__form">
                               <div class="contacts__form-box">
                                   <h4 class="contacts__form-title">Оставить заявку</h4>
-                                  <label>
-                                      <span class="contacts__form-span">Ваше имя</span>
+                                  
+                                  <label class="contacts__form-label">Ваше имя</label>
                                       <input 
                                           type="text" 
                                           id="name"
@@ -360,9 +418,8 @@
                                           placeholder="Напишите Ваше имя"
                                           required
                                       >
-                                  </label>
-                                  <label>
-                                      <span class="contacts__form-span">Номер телефона</span>
+                              
+                                  <label class="contacts__form-label">Номер телефона</label>
                                       <input 
                                           type="text" 
                                           id="tel"
@@ -371,22 +428,23 @@
                                           placeholder="+7 999 999 99-99"
                                           required
                                       >
-                                  </label>
                                   <button class="contacts__form-button">Отправить</button>
                               </div>
                             </form>
+                            </div>
+                            
                         </div>
-                      <img src="./images/img-cleaning.svg" class="contacts__img-cleaning" alt="рисунок">
                   </div>
                   </div>
-              <img src="./images/fon-img.jpg" class="comments__img" alt="фоновая картинка">
+              <img src="../images/fon-img.jpg" class="contacts__img" alt="фоновая картинка">
           </section>
       </main>
 
-      <!-- Секция footer 
+   <!--   Секция footer -->
 
      <footer class="footer">
                 <div class="footer__content">
+                    <div class="footer__wrapper">
                     <div class="footer__block-lists">
                         <h6 class="footer__title">Для дома</h6>
                         <ul class="footer__lists">
@@ -431,18 +489,17 @@
                     </div>
 
                     <div class="footer__openingHours">
-                        <h6 class="footer__title">
-                            Время работы: <br />
-                            Пн-Вс 09:00-23:00
-                        </h6>
+                        <h6 class="footer__title">Время работы</h6> 
+                            <p class="footer__text">Пн-Вс: 09:00-23:00</p>
+                        
 
-                        <p class="footer__text">Работаем в Москве и МО</p>
+                        <p class="footer__text" style="font-style: italic;">Работаем в Москве и МО</p>
                     </div>
 
                     <div class="footer__contacts">
-                        <h6 class="footer__title display-none750px">Наши контакты</h6>
+                        <h6 class="footer__title">Наши контакты</h6>
 
-                        <a type="tel" href="+79100899001" class="footer__text">8 (910) 089-90-01</a>
+                        <a type="tel" href="+79100899001" class="footer__text footer__text_ctrl_tel">8 (910) 089-90-01</a>
 
                         <div class="footer__socials">
                             <img
@@ -462,10 +519,31 @@
                             >
                         </div>
                     </div>
+                    </div>
+                      <p class="footer__paragraph">Euro Dry Cleaning &#8212; выездная химчистка мебели в Москве</p>
                 </div>
 
-                <p class="footer__paragraph">Euro Dry Cleaning Выездная химчистка мебели.</p>
-          </footer> -->
+              
+          </footer>
+          <script>
+      document.getElementById("toggle").addEventListener("click", function() {
+        const textshidden = document.querySelector(".comments__item-texts");
+        const button = document.getElementById("button-text");
+        const arrow = document.getElementById("arrow");
+
+          if (textshidden.classList.contains("hidden")) {
+              textshidden.classList.remove("hidden");
+              textshidden.classList.add("expanded"); // Класс для развёртывания
+              button.textContent = "Свернуть";
+              arrow.style.transform = "rotate(180deg)";
+          } else {
+              textshidden.classList.remove("expanded");
+              textshidden.classList.add("hidden");
+              button.textContent = "Развернуть";
+              arrow.style.transform = "rotate(0deg)"; 
+          }
+      });
+    </script>
     </div>
   </body>
 </html>

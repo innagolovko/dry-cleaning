@@ -1,4 +1,4 @@
-<h1>Часть от проекта (frontend) dry-cleaning: header, comments, contacts, footer</h1>
+<h1>Часть проекта (frontend) dry-cleaning: header, comments, contacts, footer</h1>
 
 ### Технологии
 

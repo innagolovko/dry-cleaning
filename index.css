@@ -2,7 +2,6 @@
 @import url('./comments/comments.css');
 @import url('./contacts/contacts.css');
 @import url('./footer/footer.css');
-@import url('./error-404/error-404.css');
 
 * {
     margin: 0;
@@ -16,14 +15,16 @@
     --color-secondary: rgba(47, 62, 83, 1);
     --color-black: rgba(0, 0, 0, 1);
     --color-white: rgba(255, 255, 255, 1);
-    --color-gray: rgba(149, 149, 149, 1)
-}
+    --color-gray: rgba(149, 149, 149, 1);
+    --color-red: rgba(255, 0, 0, 1);
+    --transition: all .5s ease-in-out;
+} 
 
 .page {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', 'Stengazeta', Arial, sans-serif;
+    font-family: 'Roboto Condensed',  Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -31,12 +32,12 @@
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
+   
 }
 
 .page__content {
-    margin: 0 auto;
     max-width: 1920px;
-    min-width: 320px;
+    /*max-width: 320px;*/
     background: var(--color-fon-gray);
     min-height: 100vh;
 }
@@ -47,5 +48,5 @@
 }
 
 
-  /** { outline: 1px solid rgb(255, 0, 106); } */
+ /* * { outline: 1px solid rgb(255, 0, 106); } */
  

@@ -1,45 +1,28 @@
 .footer {
-    flex-shrink: 0;
-    height: 700px;
-    max-width: 1920px;
-    background: var(--color-fon-gray);
-    /*outline: 8px rgb(133, 5, 69) solid;*/
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: var(--color-fon-gray);
 }
 
 .footer__content {
-    /* outline: 8px rgb(5, 133, 11) solid;*/
     width: calc(100% - 760px);
+    padding: 70px 0 50px 0;
+}
+
+.footer__wrapper {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-
-.footer__contacts {
-    width: 184px;
-}
-
-.footer__block-lists {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+    justify-content: space-between;
 }
 
 .footer__title {
     margin: 0;
     margin-bottom: 20px;
-    max-width: 200px;
-    font-family: 'Roboto';
+    font-family: 'Roboto Condensed';
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: var(--color-secondary);
 }
 
@@ -53,10 +36,10 @@
 .footer__lists-item {
     margin: 0;
     margin-bottom: 10px;
-    font-family: Roboto;
+    font-family: 'Roboto Condensed';
     font-size: 16px;
     font-weight: normal;
-    line-height: 24.8px;
+    line-height: 24px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -64,15 +47,23 @@
 }
 
 .footer__lists-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
     color: var(--color-secondary);
     text-decoration: none;
+}
+.footer__lists-link:hover {
+    opacity: 0.8;
+    color: var(--color-fon-gray);
+    background-color: var(--color-secondary);
 }
 
 .footer__text {
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto Condensed';
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
@@ -81,173 +72,162 @@
     color: var(--color-secondary);
     text-decoration: none;
 }
+.footer__text_ctrl_tel:hover {
+    opacity: 0.8;
+}
 
 .footer__socials {
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-    width: 184px;
+    margin-top: 30px;
+}
+
+.footer__icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.footer__icon:hover {
+    opacity: 0.8;
+    transform: scale(1.08);
+    transition: transform 0.5s ease;
+}
+.footer__icon:last-of-type {
+    margin-right: 0;
 }
 
 .footer__paragraph {
-    margin: 0;
-    max-width: 473px;
-    font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 20px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: var(--color-black);
-    margin-top: 80px;
+    margin-top: 50px;
+    color: var(--color-gray);
 }
 
-@media (max-width: 1440px) {
+@media screen and (min-width: 320px) and (max-width: 799px) {
     .footer__content {
-        width: 85%;
-    }
-}
-
-@media (max-width: 1250px) {
-    .footer__content {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .footer__lists_center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer__paragraph {
-        font-size: 10px;
-        margin-top: 30px;
-    }
-    .footer__title {
-        font-size: 14px;
-    }
-    .footer__lists-link {
-        font-size: 14px;
-    }
-    .footer__text {
-        font-size: 14px;
-    }
-    .footer__lists-item {
-        font-size: 14px;
-    }
-    .footer__icon {
-        width: 35px;
-        height: 35px;
-    }
-    .footer__socials {
-        justify-content: flex-start;
-        gap: 15px;
-        margin-top: 10px;
-    }
-    .footer__content {
-        justify-content: space-between;
-        /* padding-left: 20px; */
-    }
-}
-
-@media (max-width: 760px) {
-    .footer__content {
-        width: 694px;
+        width: calc(100% - 40px);
+        padding: 30px 0 20px 0;
+        margin: 0 20px 0 20px;
     }
 
-    .footer__title {
-        font-size: 12px;
-    }
-    .footer__lists-link {
-        font-size: 11px;
-    }
-    .footer__text {
-        font-size: 11px;
-    }
-    .footer__lists-item {
-        font-size: 12px;
-        margin-bottom: 0;
-    }
-    .footer__icon {
-        width: 25px;
-        height: 25px;
-    }
-    .display-none750px {
-        display: none;
-    }
-
-    .footer__socials {
-        width: 95px;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    .footer__content {
-        padding: 20px;
-        width: 100%;
+    .footer__wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 колонки: первая будет занимать 1 часть, а вторая 2 части */
-        gap: 10px; /* Уменьшаем отступы */
+        grid-template-columns: 1fr;
+        gap: 20px; 
+        text-align: center;
     }
 
     .footer__block-lists {
-        width: 155px;   
-        grid-column: 1 / 2; /* Первая колонка */
-        grid-row: 1 / 2; /* Первая строка */
+        width: 100%;
+        margin: 0 auto;
     }
+
     .footer__information {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin: 0 auto;
     }
-    .footer__information,
-    .footer__openingHours,
-    .footer__contacts {
-        grid-column: 2 / 3; /* Все эти элементы будут в первой колонке */
-        grid-row: 1 / 2; /* Первая строка */
-        max-width: 140px;
-    }
+
     .footer__openingHours {
-        margin-top: 185px;
+        margin: 0 auto;
     }
+
     .footer__contacts {
-        margin-top: 235px;
-        right: 0;
+        margin: 0 auto;
     }
-    h6.footer__title {
-        margin-bottom: 10px;
-        line-height: 15px;
+
+    .footer__title {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
     }
+
+    .footer__lists-item {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .footer__lists-link {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .footer__lists_center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 40px;
+    }
+
     .footer__text {
-        margin-top: -15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer__icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+    }
+
+    .footer__paragraph {
+        font-size: 14px;
+        margin-top: 50px;
     }
 }
 
-@media (max-width: 320px) {
-    .footer {
-        justify-content:start;
-        flex-direction: column;
-        align-items: center;
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    .footer__content {
+        width: 800px;
+        padding: 50px 50px 20px 50px;
     }
 
-    .footer__content {
-        width: calc(100% - 20px);
-        height: 100%;
-       /* grid-template-columns: 1fr; /* 2 колонки: первая будет занимать 1 часть, а вторая 2 части */
-        gap: 20px;
-        padding: 0;
+    .footer__title {
+        font-size: 16px;
     }
-    /*.footer__information,
-    .footer__openingHours,
-    .footer__contacts {
-        margin-right: -20px;
-        max-width: 130px;
-    }*/
+
+    .footer__text {
+        font-size: 14px;
+    }
+
+    .footer__icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
 
     .footer__socials {
-        width: 110px;
+        margin-top: 20px;
+    }
+
+    .footer__paragraph {
+        font-size: 16px;
+        margin-top: 50px;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1759px) {
+    .footer__content {
+        width: 884px;
+        padding: 50px 0 30px 0;
+    }
+
+    .footer__title {
+        font-size: 18px;
+    }
+  
+    .footer__text {
+        font-size: 16px;
+    }
+  
+    .footer__icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1760px) and (max-width: 1919px) {
+     .footer {
+        width: 100%;
+    }
+} 
